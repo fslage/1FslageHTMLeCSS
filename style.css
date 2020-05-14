@@ -69,7 +69,7 @@ header nav ul li {
 .pacotes .pacotes-cards {
     display: flex;
     margin: 15px;
-    max-width: 900px;
+    max-width: 1330px;
     flex-wrap: wrap;
     justify-content: center;
 }
