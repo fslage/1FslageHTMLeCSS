@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 * {
     box-sizing: border-box;
@@ -22,8 +23,9 @@ button {
     border-radius: 8px;
     font-weight: bold;
     border: 0;
-    background: rgba(140, 253, 10, 0.89);
+    background: rgba(30, 233, 223, 0.89);
     color: rgb(3, 17, 0);
+    border: 2px solid rgb(44, 182, 206);
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -61,26 +63,26 @@ header nav ul li {
     font-size: 4rem;
 }
 
-.pacotes {
+.cursos {
     background: #e1e8f7;
     padding: 15px;
 }
 
-.pacotes .pacotes-cards {
+.cursos .cursos-cards {
     display: flex;
-    margin: 15px;
-    max-width: 1330px;
+    margin: 40px;
+    max-width: 1440px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.pacotes .pacotes-title {
+.cursos .cursos-title {
     width: 100%;
     text-align: center;
-    margin: 15px 0;
+    margin: 10px 0;
 }
 
-.pacotes .card {
+.cursos .card {
     width: 250px;
     height: 350px;
     background: white;
@@ -89,24 +91,24 @@ header nav ul li {
     position: relative;
 }
 
-.pacotes .card-image {
+.cursos .card-image {
     width: 250px;
     height: 200px;
     border-radius: 24px 0 0 0;
     object-fit: cover;
 }
 
-.pacotes .card-content {
+.cursos .card-content {
     padding: 0 15px;
 }
 
-.pacotes .card-content ul {
+.cursos .card-content ul {
     display: flex;
     flex-direction: column;
     padding: 0;
 }
 
-.pacotes .card-content ul li {
+.cursos .card-content ul li {
     font-size: 0.8rem;
     display: flex;
     align-items: center;
@@ -115,17 +117,17 @@ header nav ul li {
     font-weight: bold;
 }
 
-.pacotes .card-content li svg {
+.cursos .card-content li svg {
     width: 16px;
     height: 16px;
     margin-right: 10px;
 }
 
-.pacotes .card-content h1 {
+.cursos .card-content h1 {
     font-size: 1rem;
 }
 
-.pacotes .card .card-tag-top {
+.cursos .card .card-tag-top {
     position: absolute;
     right: 0;
     top: 15px;
@@ -134,7 +136,7 @@ header nav ul li {
     padding: 5px 10px;
 }
 
-.pacotes .card .card-tag-bottom {
+.cursos .card .card-tag-bottom {
     position: absolute;
     left: 0;
     top: 160px;
@@ -142,70 +144,74 @@ header nav ul li {
     border-radius: 0 8px 8px 0;
     padding: 5px 10px;
 }
-.pacotes .card .card-tag p {
+
+.cursos .card .card-tag p {
     margin: 0;
     font-size: 0.8rem;
-    color: white;
+    color: rgb(247, 223, 223);
     font-weight: bold;
 }
 
 .cursos {
     padding: 15px;
+    background-color: rgb(244, 248, 250);
 }
 
-.cursos .cursos-title {
+.saibamais .saibamais-title {
     text-align: center;
     margin: 25px 0;
 }
 
-.cursos .cursos-cards {
-    margin-top: 25px;
+.saibamais .saibamais-cards {
+    margin-top: 5px;
     display: flex;
-    max-width: 950px;
+    max-width: 1200px;
     justify-content: center;
     margin: auto;
     flex-wrap: wrap;
 }
 
-.cursos .card {
-    width: 250px;
+.saibamais .card {
+    width: 280px;
+    margin-top: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 20px;
+    margin: 5% 20px;
 }
 
-.cursos .card svg {
-    width: 60px;
+.saibamais .card svg {
+    width: 50px;
     height: 60px;
-    margin: 50px;
+    margin: 30px;
     transition: all 1s;
 }
 
-.cursos .card svg:hover {
+.saibamais .card svg:hover {
     stroke: rgb(67, 155, 206);
     transform: scale(1.1);
 }
 
-.cursos .card h3 {
+.saibamais .card h3 {
     font-weight: bold;
 }
 
-.cursos .card p {
+.saibamais .card p {
     color: grey;
     font-size: .8rem;
     text-align: center;
 }
 
-.cursos .card .card-content {
-    height: 180px;
+.saibamais .card .card-content {
+    height: 160px;
     text-align: center;
 }
 
-.cursos button {
-    background: rgba(140, 253, 10, 0.89);
+.saibamais button {
+    background: rgba(30, 233, 223, 0.89);
     color: rgb(3, 17, 0);
+    border: 2px solid rgb(44, 182, 206);
 }
 
 #map {
@@ -213,10 +219,11 @@ header nav ul li {
     /* The height is 400 pixels */
     width: 100%;
     /* The width is the width of the web page */
+    border: 2px solid rgb(6, 27, 99);
 }
 
 .faleconosco {
-    padding: 60px;
+    padding: 50px;
     background: #e1e8f7;
     position: relative;
 }
@@ -227,17 +234,15 @@ header nav ul li {
     background: white;
     position: absolute;
     z-index: 99;
-
     border-radius: 8px;
-
     top: calc(50% - 150px);
     left: calc(20% - 175px);
-
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+    border: 2px solid rgb(33, 26, 139);
 }
 
 .faleconosco .faleconosco-card h1 {
@@ -249,7 +254,6 @@ header nav ul li {
     font-size: .8rem;
     font-weight: bold;
     color: grey;
-    
     display: flex;
     align-items: center;
 }
@@ -262,34 +266,39 @@ header nav ul li {
 
 /* RESPONSIVIDADE */
 
+
 /* Especial para mapa */
+
 @media (max-width: 950px) {
     .contato {
         padding: 60px 0;
     }
-
     .contato .contato-card {
         left: 40px;
     }
 }
 
+
 /* Especial para mapa */
+
 @media (max-width: 800px) {
     .faleconosco {
         padding: 20px 0;
     }
-
     .faleconosco .faleconosco-card {
         position: static;
         margin: 40px auto;
     }
 }
 
+
 /* Landscape TABLETS and down */
-@media (max-width: 767px) {
-}
+
+@media (max-width: 767px) {}
+
 
 /* Landscape phones and down */
+
 @media (max-width: 480px) {
     body {
         margin-bottom: 55px;

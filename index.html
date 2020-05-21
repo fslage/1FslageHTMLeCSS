@@ -17,25 +17,26 @@
         <nav>
             <p>Meus Cursos</p>
             <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#Cursos">Cursos</a></li>
-                <li><a href="#Saiba +">Saiba Mais</a></li>
-                <li><a href="#FaleConosco">Fale Conosco</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#saibamais">Saiba Mais</a></li>
+                <li><a href="#faleconosco">Fale Conosco</a></li>
             </ul>
         </nav>
 
         <div id="home" class="header-content">
             <h2>Os melhores cursos da área de TI você encontra aqui!</h2>
-            <p>Conheça os melhores cursos da área de TI sem perder tempo e dinheiro.</p><p>Faça parte do mundo EAD!</p>
+            <p>Conheça os melhores cursos da área de TI sem perder tempo e dinheiro.</p>
+            <p>Faça parte do mundo EAD!</p>
             <button>Saiba mais</button>
         </div>
     </header>
 
-    <section id="pacotes" class="pacotes">
+    <section id="cursos" class="cursos">
 
-        <h1 class="pacotes-title">Conheça nossos cursos</h1>
+        <h1 class="cursos-title">Conheça nossos cursos</h1>
 
-        <div class="pacotes-cards">
+        <div class="cursos-cards">
             <div class="card">
                 <div class="card-tag card-tag-top">
                     <p>Gratuito</p>
@@ -44,7 +45,7 @@
                 <div class="card-tag card-tag-bottom">
                     <p>Última semana</p>
                 </div>
-               <img class="card-image" src="assets\curso03.jpg" alt="miami">
+                <img class="card-image" src="assets\curso03.jpg" alt="miami">
                 <div class="card-content">
                     <h1>CSS - Conteúdo atualizado</h1>
                     <ul>
@@ -53,7 +54,7 @@
                         <li> <i data-feather="briefcase"></i> Viagens ou Home Office</li>
                     </ul>
                 </div>
-              
+
             </div>
 
             <div class="card">
@@ -73,7 +74,7 @@
                     </ul>
                 </div>
             </div>
-            
+
 
             <div class="card">
                 <div class="card-tag card-tag-top">
@@ -92,41 +93,39 @@
                         <li> <i data-feather="briefcase"></i> Viagens ou Home Office</li>
                     </ul>
 
-                
-                    </div>
+
                 </div>
-        
-                <div class="card">
-                    <div class="card-tag card-tag-top">
-                        <p>Desconto de 50%</p>
-                    </div>
-    
-                    <div class="card-tag card-tag-bottom">
-                        <p>Últimas vagas</p>
-                    </div>
-                    <img class="card-image" src="assets\curso09.jpg" alt="miami">
-                    <div class="card-content">
-                        <h1>Bootstrap - Conteúdo atualizado</h1>
-                        <ul>
-                            <li> <i data-feather="coffee"></i> Intervalos em turma </li>
-                            <li> <i data-feather="wifi"></i> Melhor conexão</li>
-                            <li> <i data-feather="briefcase"></i> Viagens ou Home Office</li>
-                        </ul>
-    
-                    
-                        </div>
+            </div>
+
+            <div class="card">
+                <div class="card-tag card-tag-top">
+                    <p>Desconto de 50%</p>
+                </div>
+
+                <div class="card-tag card-tag-bottom">
+                    <p>Últimas vagas</p>
+                </div>
+                <img class="card-image" src="assets\curso09.jpg" alt="miami">
+                <div class="card-content">
+                    <h1>Bootstrap - Conteúdo atualizado</h1>
+                    <ul>
+                        <li> <i data-feather="coffee"></i> Intervalos em turma </li>
+                        <li> <i data-feather="wifi"></i> Melhor conexão</li>
+                        <li> <i data-feather="briefcase"></i> Viagens ou Home Office</li>
+                    </ul>
 
 
-        </div>
+                </div>
 
 
-    
+            </div>
+
 
     </section>
 
-    <section id="cursos" class="cursos">
-        <h1 class="cursos-title">Cursos</h1>
-        <div class="cursos-cards">
+    <section id="#saibamais" class="saibamais">
+        <h1 class="saibamais-title">Cursos</h1>
+        <div class="saibamais-cards">
             <div class="card">
                 <i data-feather="map"></i>
                 <div class="card-content">
@@ -173,7 +172,7 @@
         feather.replace();
 
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+            anchor.addEventListener('click', function(e) {
                 e.preventDefault();
 
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
